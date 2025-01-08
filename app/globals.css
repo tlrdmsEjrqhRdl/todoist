@@ -1,21 +1,27 @@
+/* Tailwind CSS 기본 스타일 */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* 전역 스타일 추가 (선택 사항) */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 기본 폰트 설정 */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* 링크 스타일 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 글로벌 배경색 설정 */
+body {
+  background-color: #f9fafb; /* Tailwind의 bg-gray-50에 해당하는 색 */
+}
+
+/* 추가적인 전역 스타일을 여기에 작성할 수 있습니다. */

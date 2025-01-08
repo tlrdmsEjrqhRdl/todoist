@@ -1,11 +1,7 @@
-import React from 'react';
-
-function Loading() {
+export default function Loading() {
   return (
-    <>
-      <div className="bg-white w-full h-full">로딩중</div>
-    </>
+    <div className="bg-white w-screen h-screen flex items-center justify-center">
+      <p className="text-black text-xl">로딩중</p>
+    </div>
   );
-}   
-
-export default Loading;
+}
