@@ -1,12 +1,13 @@
-export default function Loading() {
+import React from 'react'
+
+function loading() {
   return (
-    <div
-      className="bg-white fixed inset-0 flex items-center justify-center" aria-label="Loading" role="status" >
-      <img
-        src="/todoist.png"
-        alt="Loading spinner"
-        className="w-5 h-5 animate-spin"
-      />
-    </div>
-  );
+    <>
+      <div className='bg-white w-full h-full flex justify-center items-center'>
+        <img src='/todoist.png' height={40} width={40}></img>
+      </div>
+    </>
+  )
 }
+
+export default loading;
