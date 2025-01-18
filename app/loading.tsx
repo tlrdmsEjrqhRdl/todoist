@@ -1,14 +1,35 @@
-import React from 'react'
-import Image from 'next/image';
+import styles from "./home.module.css";
 
-function loading() {
+export default function Loading() {
   return (
-    <>
-      <div className='bg-white w-full h-full flex justify-center items-center'>
-        <Image src="/todoist.png" alt='Loading spinner' height={40} width={40} />
-      </div>
-    </>
-  )
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <svg
+        className={styles.loader}
+        height="100%"
+        viewBox="0 0 32 32"
+        width={40}
+      >
+        <circle
+          cx="16"
+          cy="16"
+          fill="none"
+          r="14"
+          strokeWidth="4"
+          style={{ stroke: "rgb(29, 155, 240)", opacity: 0.2 }}
+        ></circle>
+        <circle
+          cx="16"
+          cy="16"
+          fill="none"
+          r="14"
+          strokeWidth="4"
+          style={{
+            stroke: "rgb(29, 155, 240)",
+            strokeDasharray: 80,
+            strokeDashoffset: 60,
+          }}
+        ></circle>
+      </svg>
+    </div>
+  );
 }
-
-export default loading;
